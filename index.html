@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Undreamed Games</title>
+  <meta name="description" content="Undreamed Games is an indie studio from the Netherlands making retro-looking games, like Mega City Force.">
+  <link rel="icon" type="image/png" href="assets/img/studio-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__brand" href="#top" aria-label="Undreamed Games home">
+      <img src="assets/img/studio-wordmark.png" alt="Undreamed Games">
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav__links">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__sky">
+        <div class="hero__sun"></div>
+      </div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__content">
+        <img class="hero__logo" src="assets/img/studio-logo.png" alt="Undreamed Games logo">
+        <p class="hero__tag">
+          <span>Part man,</span> <span>part machine,</span> <strong class="glitch" data-text="all indiedev!">all indiedev!</strong>
+        </p>
+        <a class="btn btn--ghost" href="#games">Play our games ↓</a>
+      </div>
+      <div class="scanlines" aria-hidden="true"></div>
+    </section>
+
+    <!-- GAMES -->
+    <section id="games" class="section">
+      <h2 class="section__title">Games</h2>
+
+      <article class="game" id="mega-city-force">
+        <div class="game__banner">
+          <img src="assets/img/mcf/library_hero.jpg" alt="Mega City Force key art: three agents in front of a neon sunset">
+          <img class="game__logo" src="assets/img/mcf/logo.png" alt="Mega City Force">
+        </div>
+
+        <div class="game__body">
+          <div class="game__info">
+            <ul class="chips">
+              <li>Action roguelike</li>
+              <li>Retrowave</li>
+              <li>Pixel art</li>
+            </ul>
+            <p class="game__lead"><em>Hello, Agent. Mega City needs your services. Are you ready to uphold the law?</em></p>
+            <p>Crime is out of control in Mega City. A corrupt megacorporation squeezes the life out of the citizens, and only the incorruptible agents of the Mega City Task Force stand in its way. Choose your agent and dive into hardcore action against criminals and brutal bosses, set to the electrifying synthwave of Droid Bishop, Timecop1983, Sublunar and more.</p>
+
+            <div class="stores">
+              <div class="stores__group">
+                <h3 class="stores__label">PC</h3>
+                <div class="stores__list">
+                  <a class="btn btn--ghost" href="https://store.steampowered.com/app/2259210/Mega_City_Force/" target="_blank" rel="noopener">Steam</a>
+                  <a class="btn btn--ghost" href="https://store.epicgames.com/p/mega-city-force-22a245" target="_blank" rel="noopener">Epic Games Store</a>
+                  <a class="btn btn--ghost" href="https://www.gog.com/en/game/mega_city_police" target="_blank" rel="noopener">GOG</a>
+                </div>
+              </div>
+              <div class="stores__group">
+                <h3 class="stores__label">Console</h3>
+                <div class="stores__list">
+                  <a class="btn btn--ghost" href="https://store.playstation.com/product/HP8289-PPSA28142_00-0684070565674926" target="_blank" rel="noopener">PlayStation</a>
+                  <a class="btn btn--ghost" href="https://www.xbox.com/games/store/mega-city-force/9nrcfnqwcfnj" target="_blank" rel="noopener">Xbox</a>
+                  <a class="btn btn--ghost" href="https://www.nintendo.com/store/products/mega-city-force-switch" target="_blank" rel="noopener">Nintendo Switch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="facts">
+            <dl>
+              <div><dt>Released</dt><dd>28 Jul 2023</dd></div>
+              <div><dt>Platform</dt><dd>PC · PlayStation · Xbox · Nintendo Switch</dd></div>
+              <div><dt>Controller</dt><dd>Full support</dd></div>
+              <div><dt>Developer</dt><dd>Undreamed Games</dd></div>
+              <div><dt>Publisher</dt><dd>Ravenage Games</dd></div>
+            </dl>
+            <div class="socials socials--small">
+              <a href="https://x.com/MegaCity_Force" target="_blank" rel="noopener">X / Twitter</a>
+              <a href="https://discord.gg/apHVhen24g" target="_blank" rel="noopener">Discord</a>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Trailer: set data-youtube-id to the video ID. The iframe only loads on click. -->
+        <div class="trailer" data-youtube-id="XPEjQgQLfdE">
+          <button class="trailer__play" type="button" aria-label="Play the Mega City Force trailer">
+            <span class="trailer__icon">▶</span>
+            <span class="trailer__label">Watch the trailer</span>
+          </button>
+        </div>
+
+        <div class="gallery">
+          <button data-full="assets/img/mcf/shot-1.jpg"><img src="assets/img/mcf/shot-1-thumb.jpg" width="800" height="450" alt="Screenshot 1" loading="lazy"></button>
+          <button data-full="assets/img/mcf/shot-2.jpg"><img src="assets/img/mcf/shot-2-thumb.jpg" width="800" height="450" alt="Screenshot 2" loading="lazy"></button>
+          <button data-full="assets/img/mcf/shot-3.jpg"><img src="assets/img/mcf/shot-3-thumb.jpg" width="800" height="450" alt="Screenshot 3" loading="lazy"></button>
+          <button data-full="assets/img/mcf/shot-4.jpg"><img src="assets/img/mcf/shot-4-thumb.jpg" width="800" height="450" alt="Screenshot 4" loading="lazy"></button>
+          <button data-full="assets/img/mcf/shot-5.jpg"><img src="assets/img/mcf/shot-5-thumb.jpg" width="800" height="450" alt="Screenshot 5" loading="lazy"></button>
+          <button data-full="assets/img/mcf/shot-6.jpg"><img src="assets/img/mcf/shot-6-thumb.jpg" width="800" height="450" alt="Screenshot 6" loading="lazy"></button>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <h3>Hardcore action</h3>
+            <p>Shoot, punch and use abilities across procedurally generated levels. Loot weapon crates, collect cash, and spend it on gear and special contracts.</p>
+          </div>
+          <div class="feature">
+            <h3>Pick your agent</h3>
+            <p>The <b>Cyborg</b> tanks with three weapon slots and a magnetic pulse. The <b>Rookie</b> dodges and stuns. The <b>Scout</b> goes invisible with optical camo. And more to unlock.</p>
+          </div>
+          <div class="feature">
+            <h3>Synthwave on tape</h3>
+            <p>Beat bosses to collect cassette tracks by real synthwave artists, then play them on the audio deck back at Headquarters.</p>
+          </div>
+          <div class="feature">
+            <h3>Crime comes back</h3>
+            <p>Finish the game and unlock a harder difficulty and loadouts in instantly recognizable legendary outfits.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--alt">
+      <h2 class="section__title">About</h2>
+      <div class="about">
+        <div class="about__text">
+          <p class="about__lead">Founded in 2018, Undreamed Games is an indie studio based in <strong>the Netherlands</strong>.</p>
+          <p>We make retro-looking games inspired by old-school pixel games and the most memorable action movies of the '80s. Our debut title is Mega City Force.</p>
+          <p class="about__note">We tracked, reduced and offset our emissions while developing Mega City Force, offsetting twice our footprint with verified carbon credits.</p>
+        </div>
+        <div class="card">
+          <div class="card__avatar">
+            <span aria-hidden="true">AA</span>
+            <img src="assets/img/team/andreu.jpg" alt="Andreu Accensi" onerror="this.remove()">
+          </div>
+          <div>
+            <h3>Andreu Accensi</h3>
+            <p class="card__role">Founder · Indiedev</p>
+            <div class="socials socials--small">
+              <a href="https://x.com/Undreamed_Games" target="_blank" rel="noopener">X / Twitter</a>
+              <a href="https://www.linkedin.com/in/andreuaccensi" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section__title">Contact</h2>
+      <div class="contact">
+        <div class="contact__intro">
+          <p class="about__lead">Let's talk.</p>
+          <p>Press, publishing, collaborations, or just want to say hi? Drop us a line and we'll get back to you.</p>
+          <p>Or join the community on <a href="https://discord.gg/apHVhen24g" target="_blank" rel="noopener">Discord</a>.</p>
+        </div>
+        <!-- Web3Forms: the access key is public by design; it only identifies the destination inbox. -->
+        <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="2e084f68-93a2-438b-a23c-050cb434c630">
+          <input type="hidden" name="subject" value="New message from undreamedgames.com">
+          <input type="hidden" name="from_name" value="Undreamed Games website">
+          <input type="checkbox" name="botcheck" class="form__honeypot" tabindex="-1" autocomplete="off">
+          <label>Name<input name="name" required autocomplete="name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          <label class="form__full">Subject
+            <select name="topic">
+              <option>General</option>
+              <option>Press / Media</option>
+              <option>Business</option>
+              <option>Bug report</option>
+            </select>
+          </label>
+          <label class="form__full">Message<textarea name="message" rows="5" required></textarea></label>
+          <div class="form__full h-captcha" data-captcha="true" data-theme="dark"></div>
+          <button class="btn btn--primary form__full" type="submit">Send message</button>
+          <p class="form__status form__full" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="socials">
+      <a href="https://x.com/Undreamed_Games" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://discord.gg/apHVhen24g" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <p>© <span id="year">2026</span> Undreamed Games · The Netherlands</p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <img alt="">
+    <button class="lightbox__close" aria-label="Close">✕</button>
+  </dialog>
+
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
