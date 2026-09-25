@@ -20,6 +20,21 @@ document.querySelectorAll('.gallery button').forEach((btn) => {
 });
 lightbox.addEventListener('click', () => lightbox.close());
 
+// Screenshot carousel: arrows scroll by one page of thumbnails and hide at the ends
+const gallery = document.querySelector('.gallery');
+const prevBtn = document.querySelector('.carousel__arrow--prev');
+const nextBtn = document.querySelector('.carousel__arrow--next');
+function updateArrows() {
+  const max = gallery.scrollWidth - gallery.clientWidth;
+  prevBtn.disabled = gallery.scrollLeft <= 1;
+  nextBtn.disabled = gallery.scrollLeft >= max - 1;
+}
+prevBtn.addEventListener('click', () => gallery.scrollBy({ left: -gallery.clientWidth }));
+nextBtn.addEventListener('click', () => gallery.scrollBy({ left: gallery.clientWidth }));
+gallery.addEventListener('scroll', updateArrows, { passive: true });
+window.addEventListener('resize', updateArrows);
+updateArrows();
+
 // Trailer: show the YouTube thumbnail, only load the player on click
 const trailer = document.querySelector('.trailer');
 const videoId = trailer.dataset.youtubeId;
@@ -61,7 +76,7 @@ form.addEventListener('submit', async (e) => {
     const json = await res.json();
     if (!json.success) throw new Error(json.message);
     form.reset();
-    setStatus("Thanks! Your message is on its way. We'll get back to you soon.");
+    setStatus("Thanks! Your message is on its way. I'll get back to you soon.");
   } catch (err) {
     setStatus(`Something went wrong${err.message ? `: ${err.message}` : ''}. Please try again later.`, true);
   } finally {
